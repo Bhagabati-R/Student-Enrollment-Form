@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-card">
+            <h1 class="form-title">Student Enrollment Form</h1>
+            <p class="form-subtitle">Manage student records with JsonPowerDB</p>
+            
+            <form id="enrollmentForm" novalidate>
+                <div class="form-group">
+                    <label for="rollNo">Roll Number <span class="required">*</span></label>
+                    <input type="number" id="rollNo" name="rollNo" placeholder="Enter Roll Number" min="1">
+                </div>
+                
+                <div class="form-group">
+                    <label for="fullName">Full Name <span class="required">*</span></label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name" disabled>
+                </div>
+                
+                <div class="form-group">
+                    <label for="className">Class <span class="required">*</span></label>
+                    <input type="text" id="className" name="className" placeholder="Enter Class (e.g., 10th, 12th)" disabled>
+                </div>
+                
+                <div class="form-group">
+                    <label for="birthDate">Birth Date <span class="required">*</span></label>
+                    <input type="date" id="birthDate" name="birthDate" disabled>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Address <span class="required">*</span></label>
+                    <textarea id="address" name="address" placeholder="Enter Full Address" rows="3" disabled></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="enrollmentDate">Enrollment Date <span class="required">*</span></label>
+                    <input type="date" id="enrollmentDate" name="enrollmentDate" disabled>
+                </div>
+                
+                <div class="button-group">
+                    <button type="button" id="saveBtn" class="btn btn-save" disabled>Save</button>
+                    <button type="button" id="updateBtn" class="btn btn-update" disabled>Update</button>
+                    <button type="button" id="resetBtn" class="btn btn-reset" disabled>Reset</button>
+                </div>
+            </form>
+            
+            <div id="message" class="message"></div>
+            
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <span>Processing...</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/db.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

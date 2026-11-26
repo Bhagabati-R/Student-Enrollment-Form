@@ -1,0 +1,41 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Configuration files with sensitive data
+# IMPORTANT: Keep your connection token private!
+config.local.js
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Dependency directories
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Backup files
+*.backup
+*.bak
